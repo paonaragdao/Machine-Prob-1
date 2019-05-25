@@ -1,0 +1,28 @@
+//Top 10
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    double gpa[10]={1.00, 1.25, 1.75, 1.50, 2.00, 1.00, 1.25, 1.50, 2.00, 1.25};
+    double temp;
+    int j;
+    
+   for(int i=1;i<10;++i)
+	{
+		for(int j=0;j<(10-i);++j)
+			if(gpa[j]>gpa[j+1])
+			{
+				temp=gpa[j];
+				gpa[j]=gpa[j+1];
+				gpa[j+1]=temp;
+			}
+
+	}
+	
+	cout << "TOP TEN SCORERS: " << "\n";
+	for(int i=0;i<10;++i)
+	cout << gpa[i] << "\n";	
+	
+	return 0;
+}
