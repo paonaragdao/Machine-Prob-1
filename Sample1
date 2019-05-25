@@ -4,42 +4,50 @@ using namespace std;
 int main()
 {
 
-double v
-double grades = z
+double v, z;
+double grades = z;
 
 cout << "Input Grade: ";
-cin >> z
+cin >> z;
 
 if (z == 100 && z >= 95.57)
 v = 1.00;
 
 if (z >= 91.12 && z <= 95.56)
-v = 1.25
+v = 1.25;
 
 if (z >= 86.68 && z <= 91.11)
-v = 1.50
+v = 1.50;
 
 if (z >= 82.23 && z <= 86.67)
-v = 1.75
+v = 1.75;
 
 if (z >= 77.79 && z <= 82.22)
-v = 2.00
+v = 2.00;
 
 if (z >= 73.34 && z <= 77.78)
-v = 2.25
+v = 2.25;
 
 if (z >= 68.90 && z <= 73.33)
-v = 2.50
+v = 2.50;
 
 if (z >= 64.45 && z <= 68.89)
-v = 2.75
+v = 2.75;
 
 if (z >= 60.00 && z <= 64.44)
-v = 3.00
+v = 3.00;
 
 if (z <= 59.99)
-v = 5.00
+v = 5.00;
 
-cout << "GPA: " << v << "\n"
+cout << "GPA: " << v << "\n";
+cout << " " << "\n";
+
+if (v <= 3.00)
+cout << "Status: PASSED" << "\n";
+else 
+cout << "Status: FAILED" << "\n";
+
+
 return 0;
 }
